@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>台南牛肉湯隨機產生器</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1>台南牛肉湯隨機產生器</h1>
+				<p class="subtitle">讓您輕鬆找到美味的牛肉湯店家！</p>
+			</header>
+
+			<main>
+				<section class="input-section">
+					<div class="input-group">
+						<label for="storeCount">請輸入要隨機選擇的店家數量：</label>
+						<input type="number" id="storeCount" min="1" value="1" />
+					</div>
+					<button id="randomButton" class="primary-button">隨機選擇店家</button>
+				</section>
+
+				<section class="upload-section">
+					<h2>上傳更多店家資料</h2>
+					<p class="upload-description">
+						您可以上傳 JSON 檔案來新增更多牛肉湯店家資料
+					</p>
+					<input type="file" id="jsonFile" accept=".json" />
+					<button id="uploadButton" class="secondary-button">
+						上傳 JSON 檔案
+					</button>
+				</section>
+
+				<section class="results-section">
+					<h2>隨機選擇結果</h2>
+					<div id="results" class="results-container"></div>
+				</section>
+			</main>
+
+			<footer>
+				<div class="instructions">
+					<h3>使用說明</h3>
+					<ol>
+						<li>在輸入框中輸入想要隨機選擇的店家數量</li>
+						<li>點擊「隨機選擇店家」按鈕</li>
+						<li>查看結果區域顯示的店家資訊</li>
+						<li>若要新增更多店家資料，可以點擊「上傳 JSON 檔案」按鈕</li>
+					</ol>
+				</div>
+			</footer>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
